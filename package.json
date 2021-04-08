@@ -1,0 +1,31 @@
+{
+  "name": "gigantes-viewer",
+  "version": "0.0.10",
+  "bin": "./dist/bin.js",
+  "type": "commonjs",
+  "scripts": {
+    "serve": "node ./dist/server.js",
+    "watch:frontend": "vue-cli-service build --watch",
+    "build:frontend": "vue-cli-service build",
+    "watch:backend": "tsc -watch",
+    "build:backend": "tsc",
+    "serve:backend": "nodemon ./dist/server.js",
+    "build": "npm run build:frontend & npm run build:backend"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "axios": "^0.21.1",
+    "directory-tree": "^2.2.7",
+    "express": "^4.17.1",
+    "gigantes": "^0.0.11",
+    "vue": "^2.6.11",
+    "vue-friendly-iframe": "^0.20.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-plugin-typescript": "^4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "typescript": "~3.9.3",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
